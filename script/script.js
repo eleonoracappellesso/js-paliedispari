@@ -45,6 +45,20 @@ Dichiariamo chi ha vinto.
 // chiedo all'utente di scegliere pari o dispari
 let evenOdd = prompt('Scegli pari o dispari?').toLowerCase();
 
-
-
-
+// verifico la scelta dell'utente e se valida gli chiedo un numero
+if (evenOdd === 'pari' || evenOdd === 'dispari') {
+    let userNumber = parseInt(prompt("Inserisci un numero tra 1 e 5:"));
+    //verifico il numero dell'utente e se valido genero un numero per il computer e procedo con la somma
+    if(userNumber >= 1 && userNumber <= 5){
+        let computerNumber = randomNumber();
+        let sum = userNumber + computerNumber;
+        console.log("Il numero scelto dall'utente è", userNumber);
+        console.log("Il numero random del computer è", computerNumber);
+        console.log("La somma dei due numeri è", sum);
+        
+    } else {
+        console.log("Inserisci un numero valido.");
+    }
+} else {
+    console.log("Opzione non valida. Riprova.");
+}
