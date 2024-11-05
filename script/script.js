@@ -17,3 +17,9 @@ word = word.replace(/\s+/g, '').toLowerCase();
 // trasformo la stringa in array, la inverto e la faccio tornare di tipo stringa
 let reversedWord = word.split('').reverse().join('');
 
+// verifico se la parola è palindroma
+if(word === reversedWord){
+    console.log('La parola scelta è palindroma!')
+} else {
+    console.log('La parola scalta non è palindroma!')
+}
