@@ -25,13 +25,6 @@ console.log(word);
 //     console.log('La parola scelta non è palindroma!')
 // }
 
-//creo una funzione per verificare la parola
-function wordisPalindroma(word) {
-    word = word.replace(/\s+/g, '').toLowerCase();
-    let reversedWord = word.split('').reverse().join('');
-    return word === reversedWord;
-}
-
 // verifico se la parola è palindroma
 if (wordisPalindroma(word)) {
     console.log('La parola scelta è palindroma!')
@@ -53,18 +46,5 @@ Dichiariamo chi ha vinto.
 let evenOdd = prompt('Scegli pari o dispari?').toLowerCase();
 
 
-// creo una funzione per generare un numero random tra 1 e 5
-function randomNumber() {
-    return Math.floor(Math.random() * 5) + 1;
-}
-
-// creo una funzione per verificare se un numero è pari o dispari
-function verifyEvenOdd(number) {
-    if(number % 2 === 0) {
-        return 'pari';
-    } else {
-        return 'dispari';
-    }
-}
 
 
